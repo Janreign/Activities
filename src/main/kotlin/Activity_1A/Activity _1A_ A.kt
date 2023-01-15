@@ -9,35 +9,35 @@
 //
 //
 //
-//fun main () {
+fun main () {
 
-         //Student Information
+//         Student Information
 
-//    var studentName: String? = ""
-//    var batch: String? = ""
-//    val cellPhoneNumber: Long? = null
-//    var studentEmail: String? = null
-//
-//     // Activities and Assignments
-//
-//    var assignmentName: String = ""
-//    var assignmentStatus: String? = null
-//    var assignmentMissed: String? = null
-//    var assignmentGrades: Int? = null
-//
-//    var activityName: String = ""
-//    var activityStatus: String? = null
-//    var activityMissed: String? = null
-//    var activityGrades: Int? = null
-//
-//
-//    // Student Status
-//
-//    var dateEnrolled: String? = null
-//    var absences: Int? = null
-//    var numberOfLate: Int? = null
-//    var isDropped: Boolean? = null
-//    var lastDayOfClass: String? = null
-//    var hadReadAnnouncements: Boolean? = null
+    var studentName: String? = ""
+    var batch: String? = ""
+    val cellPhoneNumber: Long? = null
+    var studentEmail: String? = null
 
-//}
+     // Activities and Assignments
+
+    var assignmentName: String = ""
+    var assignmentStatus: String? = null
+    var assignmentMissed: String? = null
+    var assignmentGrades: Int? = null
+
+    var activityName: String = ""
+    var activityStatus: String? = null
+    var activityMissed: String? = null
+    var activityGrades: Int? = null
+
+
+    // Student Status
+
+    var dateEnrolled: String? = null
+    var absences: Int? = null
+    var numberOfLate: Int? = null
+    var isDropped: Boolean? = null
+    var lastDayOfClass: String? = null
+    var hadReadAnnouncements: Boolean? = null
+
+}
