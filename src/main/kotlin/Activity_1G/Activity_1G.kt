@@ -13,28 +13,28 @@
 ////GATE - Not Palindrome
 //
 //
-//import mu.KotlinLogging
-//
-//private val logger = KotlinLogging.logger {}
-//
-//
-//fun main(args: Array<String>) {
-//
-//    logger.info{"This application will validate if the entered word is a Palindrome or not"}
-//
-//    logger.info{"Please enter a word: "}
-//    val userInput: String = readlnOrNull().toString()
-//
-//    var reverseString = ""
-//    var length = userInput.length
-//
-//    for (i in (length - 1) downTo 0) {
-//        reverseString = reverseString + userInput[i]
-//    }
-//
-//    if (userInput.equals(reverseString, ignoreCase = true)) {
-//        logger.info{"The given string is Palindrome"}
-//    } else {
-//        logger.info{"The given string is NOT a Palindrome"}
-//    }
-//}
+import mu.KotlinLogging
+
+private val logger = KotlinLogging.logger {}
+
+
+fun main(args: Array<String>) {
+
+    logger.info{"This application will validate if the entered word is a Palindrome or not"}
+
+    logger.info{"Please enter a word: "}
+    val userInput: String = readlnOrNull().toString()
+
+    var reverseString = ""
+    var length = userInput.length
+
+    for (i in (length - 1) downTo 0) {
+        reverseString = reverseString + userInput[i]
+    }
+
+    if (userInput.equals(reverseString, ignoreCase = true)) {
+        logger.info{"The given string is Palindrome"}
+    } else {
+        logger.info{"The given string is NOT a Palindrome"}
+    }
+}

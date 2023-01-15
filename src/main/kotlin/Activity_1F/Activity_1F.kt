@@ -1,36 +1,27 @@
-//import mu.KotlinLogging
+import mu.KotlinLogging
+
+private val logger = KotlinLogging.logger {}
+
+//Create an application that will accept 2 string inputs.
+//Your application will print all unique characters in both Strings.
 //
-//private val logger = KotlinLogging.logger {}
-//
-////Create an application that will accept 2 string inputs.
-////Your application will print all unique characters in both Strings.
-////
-//
-////Scope :
-////String
-////Loops
-//
-//
-//fun main() {
-//
-//    var string1: String? = null
-//    var string2: String? = null
-//
-//
-//    logger.info{"Enter two strings"}
-//
-//    logger.info{"Enter the first string"}
-//    string1 = readLine().toString()
-//
-//    logger.info{"Enter the second string"}
-//   string2 = readLine().toString()
-//
-//
-//}
-//
-//
-//
-//
-//
-//
-//
+
+//Scope :
+//String
+//Loops
+
+
+fun main(args: Array<String>) {
+
+    println("Enter String 1: ")
+    var str = readln()
+    var result1 = str.toSet()
+
+    println("Enter String 2: ")
+    var str2 = readln()
+    var result2 = str2.toSet()
+
+    println(result1+result2)
+
+}
+
