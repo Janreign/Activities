@@ -20,13 +20,13 @@ import javax.swing.text.Element
 //
 fun main () {
 
-    println("Items bought")
-    val itemsBought: MutableMap<String,Double> = mutableMapOf("Milk" to 10.5, "Shampoo" to 5.5, "" to 15.5)
-    val additionalItems: Map<String,Double> = mapOf("Milk" to 10.5, "Shampoo" to 5.5)
-    additionalItems.forEach { (k, v) -> if (itemsBought.containsKey(k)) itemsBought.merge(k, v, Double::plus) }
-    val mergeItems = (itemsBought.toList() + additionalItems.toList())
+    val items = hashMapOf("Soap" to 10.0, "Shampoo" to 20.0, "Cheese" to 30.0)
+    val totalCost = items.values.sum()
+    val totalItems = items.count()
 
-    println("Total: $mergeItems")
+    println("List of Items bought ${items.keys}")
+    println("Total number of items: $totalItems")
+    println("Total cost: $totalCost")
 
 }
 
